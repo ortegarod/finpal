@@ -7,3 +7,10 @@ CASE-STUDY.md
 __pycache__/
 node_modules/
 .DS_Store
+.next/
+*.pack.gz
+config.js
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/cache/

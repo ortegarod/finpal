@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FinAgent — Trustless AI Financial Advisor</title>
+  <title>ClawBerg — AI Agent Financial Terminal</title>
+  <script src="/config.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -327,30 +328,33 @@
 <body>
 
   <nav>
-    <div class="logo">Fin<span>Agent</span></div>
+    <div class="logo">Claw<span>Berg</span></div>
     <div id="market-data">loading market data…</div>
-    <a href="http://localhost:4000/docs" target="_blank">Docs</a>
-    <a href="https://github.com/ortegarod/finagent" target="_blank">GitHub →</a>
+    <div style="display:flex; gap:2rem; align-items:center;">
+      <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;">Dashboard</a>
+      <a href="#" onclick="window.open(window.CLAWBERG?.docsUrl||'#','_blank');return false;">Docs</a>
+      <a href="https://github.com/ortegarod/clawberg-terminal" target="_blank">GitHub →</a>
+    </div>
   </nav>
 
   <div class="hero">
     <div class="badge">AI Trading Agents Hackathon — lablab.ai 2026</div>
-    <h1>The <span class="accent">trustless</span> standard<br/>for AI financial agents.</h1>
+    <h1>The <span class="accent">Bloomberg terminal</span><br/>for AI agents.</h1>
     <p class="subtitle">
       Ask your agent anything. In under 2 minutes it pulls live market data,
       analyzes your position, and gives you a clear answer —
       then executes with on-chain proof. No human advisor comes close.
     </p>
     <div class="cta-row">
-      <a href="https://github.com/ortegarod/finagent/blob/main/SKILL.md" class="btn btn-primary" target="_blank">Connect your agent →</a>
-      <a href="https://github.com/ortegarod/finagent" class="btn btn-ghost" target="_blank">View on GitHub</a>
+      <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;" class="btn btn-primary">Live Dashboard →</a>
+      <a href="https://github.com/ortegarod/clawberg-terminal/blob/master/SKILL.md" class="btn btn-ghost" target="_blank">Connect your agent</a>
       <a href="#how" class="btn btn-ghost">How it works</a>
     </div>
 
     <div style="display:flex; align-items:center; gap:0.75rem; background:#111; border:1px solid #222; border-radius:4px; padding:0.6rem 1rem; font-size:0.78rem; max-width:520px;">
       <span style="color:#666; user-select:none;">$</span>
-      <code id="skill-cmd" style="flex:1; color:#aaa; letter-spacing:0.3px;">curl https://raw.githubusercontent.com/ortegarod/finagent/main/SKILL.md</code>
-      <button onclick="navigator.clipboard.writeText('curl https://raw.githubusercontent.com/ortegarod/finagent/main/SKILL.md').then(()=>{this.textContent='copied';setTimeout(()=>this.textContent='copy',1500)})" style="background:none; border:1px solid #333; color:#666; font-family:inherit; font-size:0.65rem; padding:0.2rem 0.6rem; border-radius:2px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; transition:all 0.2s;" onmouseover="this.style.borderColor='#666';this.style.color='#aaa'" onmouseout="this.style.borderColor='#333';this.style.color='#666'">copy</button>
+      <code id="skill-cmd" style="flex:1; color:#aaa; letter-spacing:0.3px;">curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md</code>
+      <button onclick="navigator.clipboard.writeText('curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md').then(()=>{this.textContent='copied';setTimeout(()=>this.textContent='copy',1500)})" style="background:none; border:1px solid #333; color:#666; font-family:inherit; font-size:0.65rem; padding:0.2rem 0.6rem; border-radius:2px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; transition:all 0.2s;" onmouseover="this.style.borderColor='#666';this.style.color='#aaa'" onmouseout="this.style.borderColor='#333';this.style.color='#666'">copy</button>
     </div>
 
     <div class="terminal">
@@ -358,7 +362,7 @@
         <div class="dot red"></div>
         <div class="dot yellow"></div>
         <div class="dot green"></div>
-        <div class="terminal-title">finagent — agent session</div>
+        <div class="terminal-title">clawberg — agent session</div>
       </div>
       <div class="terminal-body" id="terminal-output">
         <div><span class="t-prompt">you → agent</span> <span class="t-cmd">I have $15k. I want to invest in Tesla. What do you think?</span></div>
@@ -560,7 +564,7 @@
   <footer>
     <div>Built at AI Trading Agents Hackathon — lablab.ai × Kraken × Surge</div>
     <div>
-      <a href="https://github.com/ortegarod/finagent" target="_blank">GitHub</a>
+      <a href="https://github.com/ortegarod/clawberg-terminal" target="_blank">GitHub</a>
       <a href="https://early.surge.xyz" target="_blank" style="margin-left:1.5rem">Surge</a>
     </div>
   </footer>

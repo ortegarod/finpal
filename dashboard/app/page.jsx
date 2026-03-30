@@ -156,7 +156,7 @@ export default function PortfolioPage() {
         <div>
           <h1 className="text-2xl font-medium">Portfolio Overview</h1>
           <p className="text-muted text-sm mt-1">
-            Agent: <span className="text-text">FinAgent-001</span>
+            Agent: <span className="text-text">ClawBerg-001</span>
             <span className="mx-2">·</span>
             Wallet: <span className="text-text">{truncateAddress('0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D')}</span>
           </p>

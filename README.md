@@ -1,4 +1,4 @@
-# FinAgent
+# ClawBerg
 
 Everyone has an opinion on your money. Your agent has one instruction: manage yours. No agenda, no commissions, no talking heads — just your portfolio, your context, and a framework built to execute.
 

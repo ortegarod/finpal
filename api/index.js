@@ -242,7 +242,7 @@ app.get('/docs', (req, res) => {
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FinAgent API Docs</title>
+  <title>ClawBerg API Docs</title>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
     body { background:#0a0a0a; color:#e8e8e8; font-family:'SF Mono','Fira Code',monospace; padding:3rem; max-width:860px; margin:0 auto; }
@@ -269,7 +269,7 @@ app.get('/docs', (req, res) => {
   </style>
 </head>
 <body>
-  <h1>FinAgent API</h1>
+  <h1>ClawBerg API</h1>
   <div class="subtitle">Base URL: <code>http://localhost:4000</code> &nbsp;|&nbsp; Real-time: SSE at <code>/events</code></div>
   <nav>
     <a href="#trades">Trades</a>
@@ -351,12 +351,12 @@ es.addEventListener('portfolio', e => console.log('Portfolio updated:', JSON.par
 4. Update state   →  POST /portfolio (current holdings after the trade)
 5. Log decision   →  POST /actions  (action_type: "trade", what was executed + why)</pre>
 
-  <p style="margin-top:2rem; color:#444; font-size:0.72rem;">FinAgent — AI Trading Agents Hackathon, lablab.ai × Kraken × Surge, March 2026</p>
+  <p style="margin-top:2rem; color:#444; font-size:0.72rem;">ClawBerg — AI Trading Agents Hackathon, lablab.ai × Kraken × Surge, March 2026</p>
 </body>
 </html>`);
 });
 
 // Start server
 app.listen(port, () => {
-  console.log(`Financial Agent API running on port ${port}`);
+  console.log(`ClawBerg API running on port ${port}`);
 });

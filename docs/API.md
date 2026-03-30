@@ -1,6 +1,6 @@
-# FinAgent API Reference
+# ClawBerg API Reference
 
-Base URL: `http://localhost:4000` (configure via `NEXT_PUBLIC_API_URL`)  
+**Base URL:** configure via `API_URL` environment variable (default: `http://localhost:4000`)  
 Real-time updates: SSE at `GET /events`
 
 ---
@@ -103,3 +103,20 @@ npm start   # runs on :4000
 cd ../dashboard && cp .env.example .env
 npm install && npm run dev   # runs on :3000
 ```
+
+---
+
+## Health Check
+
+```bash
+curl http://localhost:4000/health
+# {"status":"ok","timestamp":"..."}
+```
+
+---
+
+## Changelog
+
+| Date | Change |
+|---|---|
+| 2026-03-30 | Initial API — /trades, /actions, /portfolio, /events, /health |

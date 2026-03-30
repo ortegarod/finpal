@@ -1,18 +1,18 @@
-# FinAgent — Agent Skill
+# ClawBerg — Agent Skill
 
-This file tells your AI agent how to use FinAgent. Read it once and your agent knows everything it needs.
+This file tells your AI agent how to use ClawBerg. Read it once and your agent knows everything it needs.
 
 ---
 
 ## What This App Does
 
-FinAgent gives your agent three tools:
+ClawBerg gives your agent three tools:
 
 1. **Kraken CLI** — executes trades across crypto, tokenized stocks (xStocks), and forex
 2. **PRISM API** — resolves asset names, provides sentiment and cross-venue market data
-3. **FinAgent API** — logs what your agent does so the dashboard can display it
+3. **ClawBerg API** — logs what your agent does so the dashboard can display it
 
-Your agent brings the context. FinAgent provides the terminal.
+Your agent brings the context. ClawBerg provides the terminal.
 
 ---
 
@@ -103,7 +103,7 @@ curl "$BASE/crypto/price/BTC"
 
 ---
 
-## Tool 3: FinAgent API
+## Tool 3: ClawBerg API
 
 Log everything your agent does. This is what powers the dashboard and on-chain reputation.
 
