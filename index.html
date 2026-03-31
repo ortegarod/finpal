@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ClawBerg — AI Agent Financial Terminal</title>
+  <title>FinPal — Your AI Financial Advisor</title>
   <script src="/config.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,9 +28,13 @@
       font-weight: 700;
       color: #00ff88;
       letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
     }
 
     .logo span { color: #f5f5f5; }
+    .logo .dolphin { font-size: 1.3rem; line-height: 1; }
 
     nav a {
       color: #666;
@@ -328,22 +332,23 @@
 <body>
 
   <nav>
-    <div class="logo">Claw<span>Berg</span></div>
+    <div class="logo"><span class="dolphin">🐬</span> Fin<span>Pal</span></div>
     <div id="market-data">loading market data…</div>
     <div style="display:flex; gap:2rem; align-items:center;">
       <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;">Dashboard</a>
       <a href="#" onclick="window.open(window.CLAWBERG?.docsUrl||'#','_blank');return false;">Docs</a>
       <a href="https://github.com/ortegarod/clawberg-terminal" target="_blank">GitHub →</a>
+      <!-- repo rename coming -->
     </div>
   </nav>
 
   <div class="hero">
     <div class="badge">AI Trading Agents Hackathon — lablab.ai 2026</div>
-    <h1>The <span class="accent">Bloomberg terminal</span><br/>for AI agents.</h1>
+    <h1>Your <span class="accent">AI financial pal.</span><br/>No Wall Street friend required.</h1>
     <p class="subtitle">
-      Ask your agent anything. In under 2 minutes it pulls live market data,
+      Ask anything. In under 2 minutes it pulls live market data,
       analyzes your position, and gives you a clear answer —
-      then executes with on-chain proof. No human advisor comes close.
+      then executes with on-chain proof. No suit, no agenda, no bullshit.
     </p>
     <div class="cta-row">
       <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;" class="btn btn-primary">Live Dashboard →</a>
@@ -362,7 +367,7 @@
         <div class="dot red"></div>
         <div class="dot yellow"></div>
         <div class="dot green"></div>
-        <div class="terminal-title">clawberg — agent session</div>
+        <div class="terminal-title">finpal — agent session</div>
       </div>
       <div class="terminal-body" id="terminal-output">
         <div><span class="t-prompt">you → agent</span> <span class="t-cmd">I have $15k. I want to invest in Tesla. What do you think?</span></div>
@@ -466,7 +471,7 @@
         <div style="font-size: 0.7rem; color: #444;">— Every retail investor, ever</div>
       </div>
       <div style="padding: 1.5rem; border: 1px solid #222; border-radius: 4px; display: flex; flex-direction: column; gap: 0.8rem;">
-        <div style="font-size: 0.8rem; color: #f5f5f5; line-height: 1.7; font-weight: 600;">Your AI agent is that friend.</div>
+        <div style="font-size: 0.8rem; color: #f5f5f5; line-height: 1.7; font-weight: 600;">FinPal is that friend.</div>
         <div style="font-size: 0.8rem; color: #aaa; line-height: 1.7;">No hype. No agenda. Not trying to sell you anything. It looks at the data, tells you where you actually stand, and gives you a clear answer — not a hot take.</div>
         <div style="font-size: 0.8rem; color: #aaa; line-height: 1.7;">Learning to trade well takes years. Your agent already has that knowledge. It just needs your goals and access to execute.</div>
       </div>
@@ -562,7 +567,7 @@
   </div>
 
   <footer>
-    <div>Built at AI Trading Agents Hackathon — lablab.ai × Kraken × Surge</div>
+    <div>🐬 FinPal — Built at AI Trading Agents Hackathon, lablab.ai × Kraken × Surge</div>
     <div>
       <a href="https://github.com/ortegarod/clawberg-terminal" target="_blank">GitHub</a>
       <a href="https://early.surge.xyz" target="_blank" style="margin-left:1.5rem">Surge</a>
