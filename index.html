@@ -342,51 +342,6 @@
     </div>
   </nav>
 
-  <div class="hero">
-    <div class="badge">AI Trading Agents Hackathon — lablab.ai 2026</div>
-    <h1>Your <span class="accent">AI financial pal.</span><br/>No Wall Street friend required.</h1>
-    <p class="subtitle">
-      Ask anything. In under 2 minutes it pulls live market data,
-      analyzes your position, and gives you a clear answer —
-      then executes with on-chain proof. Stop being a crustacean. Get your fins.
-    </p>
-    <div class="cta-row">
-      <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;" class="btn btn-primary">Live Dashboard →</a>
-      <a href="https://github.com/ortegarod/clawberg-terminal/blob/master/SKILL.md" class="btn btn-ghost" target="_blank">Connect your agent</a>
-      <a href="#how" class="btn btn-ghost">How it works</a>
-    </div>
-
-    <div style="display:flex; align-items:center; gap:0.75rem; background:#111; border:1px solid #222; border-radius:4px; padding:0.6rem 1rem; font-size:0.78rem; max-width:520px;">
-      <span style="color:#666; user-select:none;">$</span>
-      <code id="skill-cmd" style="flex:1; color:#aaa; letter-spacing:0.3px;">curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md</code>
-      <button onclick="navigator.clipboard.writeText('curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md').then(()=>{this.textContent='copied';setTimeout(()=>this.textContent='copy',1500)})" style="background:none; border:1px solid #333; color:#666; font-family:inherit; font-size:0.65rem; padding:0.2rem 0.6rem; border-radius:2px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; transition:all 0.2s;" onmouseover="this.style.borderColor='#666';this.style.color='#aaa'" onmouseout="this.style.borderColor='#333';this.style.color='#666'">copy</button>
-    </div>
-
-    <div class="terminal">
-      <div class="terminal-bar">
-        <div class="dot red"></div>
-        <div class="dot yellow"></div>
-        <div class="dot green"></div>
-        <div class="terminal-title">finpal — agent session</div>
-      </div>
-      <div class="terminal-body" id="terminal-output">
-        <div><span class="t-prompt">you → agent</span> <span class="t-cmd">I have $15k. I want to invest in Tesla. What do you think?</span></div>
-        <div class="t-out">Pulling TSLAx data from Kraken…</div>
-        <div class="t-out">TSLAx/USD σ position: <span class="t-val">-0.8</span> — near fair value, decent entry window</div>
-        <div class="t-out">Broader market Fear & Greed: <span class="t-warn">49</span> — neutral, no euphoria risk</div>
-        <div class="t-out">Funding rates: flat across venues — no crowded long positions</div>
-        <div class="t-out">Earnings: next report ~6 weeks out, low event risk near-term</div>
-        <div class="t-out">Portfolio context: 0% equity exposure currently — TSLAx adds diversification</div>
-        <div><span class="t-prompt">agent → you</span> <span class="t-cmd">Market looks reasonable. I'd suggest $3k — meaningful exposure without overweighting one name. Want me to execute?</span></div>
-        <div style="margin-top:0.5rem"><span class="t-prompt">you → agent</span> <span class="t-cmd">Yeah, do it.</span></div>
-        <div class="t-out">Signing trade intent via EIP-712 (chain: Base, EIP-155)…</div>
-        <div class="t-out">Submitting to Risk Router — limits verified ✓</div>
-        <div class="t-out">Executing: <span class="t-val">kraken order buy TSLAx/USD 12.4 --type market --asset-class tokenized_asset</span></div>
-        <div class="t-out">✓ Filled: <span class="t-val">$3,000 @ $241.80</span> — on-chain proof: 0x4a2f… <span class="t-cursor"></span></div>
-      </div>
-    </div>
-  </div>
-
   <!-- Swim with the Sharks — Ocean Scene -->
   <div style="border-top: 1px solid #111; position: relative;">
     <!-- Header -->
@@ -561,6 +516,52 @@
       transform: translateY(-8px) scale(1.1);
     }
   </style>
+
+
+  <div class="hero">
+    <div class="badge">AI Trading Agents Hackathon — lablab.ai 2026</div>
+    <h1>Your <span class="accent">AI financial pal.</span><br/>No Wall Street friend required.</h1>
+    <p class="subtitle">
+      Ask anything. In under 2 minutes it pulls live market data,
+      analyzes your position, and gives you a clear answer —
+      then executes with on-chain proof. Stop being a crustacean. Get your fins.
+    </p>
+    <div class="cta-row">
+      <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;" class="btn btn-primary">Live Dashboard →</a>
+      <a href="https://github.com/ortegarod/clawberg-terminal/blob/master/SKILL.md" class="btn btn-ghost" target="_blank">Connect your agent</a>
+      <a href="#how" class="btn btn-ghost">How it works</a>
+    </div>
+
+    <div style="display:flex; align-items:center; gap:0.75rem; background:#111; border:1px solid #222; border-radius:4px; padding:0.6rem 1rem; font-size:0.78rem; max-width:520px;">
+      <span style="color:#666; user-select:none;">$</span>
+      <code id="skill-cmd" style="flex:1; color:#aaa; letter-spacing:0.3px;">curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md</code>
+      <button onclick="navigator.clipboard.writeText('curl https://raw.githubusercontent.com/ortegarod/clawberg-terminal/master/SKILL.md').then(()=>{this.textContent='copied';setTimeout(()=>this.textContent='copy',1500)})" style="background:none; border:1px solid #333; color:#666; font-family:inherit; font-size:0.65rem; padding:0.2rem 0.6rem; border-radius:2px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; transition:all 0.2s;" onmouseover="this.style.borderColor='#666';this.style.color='#aaa'" onmouseout="this.style.borderColor='#333';this.style.color='#666'">copy</button>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+        <div class="terminal-title">finpal — agent session</div>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div><span class="t-prompt">you → agent</span> <span class="t-cmd">I have $15k. I want to invest in Tesla. What do you think?</span></div>
+        <div class="t-out">Pulling TSLAx data from Kraken…</div>
+        <div class="t-out">TSLAx/USD σ position: <span class="t-val">-0.8</span> — near fair value, decent entry window</div>
+        <div class="t-out">Broader market Fear & Greed: <span class="t-warn">49</span> — neutral, no euphoria risk</div>
+        <div class="t-out">Funding rates: flat across venues — no crowded long positions</div>
+        <div class="t-out">Earnings: next report ~6 weeks out, low event risk near-term</div>
+        <div class="t-out">Portfolio context: 0% equity exposure currently — TSLAx adds diversification</div>
+        <div><span class="t-prompt">agent → you</span> <span class="t-cmd">Market looks reasonable. I'd suggest $3k — meaningful exposure without overweighting one name. Want me to execute?</span></div>
+        <div style="margin-top:0.5rem"><span class="t-prompt">you → agent</span> <span class="t-cmd">Yeah, do it.</span></div>
+        <div class="t-out">Signing trade intent via EIP-712 (chain: Base, EIP-155)…</div>
+        <div class="t-out">Submitting to Risk Router — limits verified ✓</div>
+        <div class="t-out">Executing: <span class="t-val">kraken order buy TSLAx/USD 12.4 --type market --asset-class tokenized_asset</span></div>
+        <div class="t-out">✓ Filled: <span class="t-val">$3,000 @ $241.80</span> — on-chain proof: 0x4a2f… <span class="t-cursor"></span></div>
+      </div>
+    </div>
+  </div>
 
   <!-- Built with -->
   <div class="section" style="padding-top: 2rem; padding-bottom: 2rem;">
