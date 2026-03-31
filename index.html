@@ -348,7 +348,7 @@
     <p class="subtitle">
       Ask anything. In under 2 minutes it pulls live market data,
       analyzes your position, and gives you a clear answer —
-      then executes with on-chain proof. Stop being a crab. Swim with the dolphins.
+      then executes with on-chain proof. Stop being a crustacean. Get your fins.
     </p>
     <div class="cta-row">
       <a href="#" onclick="window.open(window.CLAWBERG?.dashboardUrl||'#','_blank');return false;" class="btn btn-primary">Live Dashboard →</a>
@@ -393,6 +393,7 @@
     <div style="position: absolute; top: 2rem; left: 3rem; z-index: 10;">
       <div style="font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: #00ff88; margin-bottom: 0.4rem;">The ocean</div>
       <div style="font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; letter-spacing: -0.5px; color: #f5f5f5;">Swim with the sharks.</div>
+      <div style="font-size: 0.8rem; color: #555; margin-top: 0.5rem; max-width: 340px; line-height: 1.6;">Most investors are crustaceans. FinPal gives you fins. <span style="color: #444;">What you do with them is up to you.</span></div>
     </div>
 
     <!-- Ocean -->
@@ -419,42 +420,65 @@
               fill="#0f0f0f" opacity="0.5"/>
       </svg>
 
-      <!-- Shrimp — shallow left, small, dim -->
-      <div class="creature" style="left:8%; top:22%; opacity:0.45; font-size:1.8rem;">
+      <!-- Zone divide line -->
+      <div style="position:absolute; left:0; right:0; top:52%; border-top:1px dashed #1a3a2a; z-index:4; pointer-events:none;"></div>
+
+      <!-- Zone labels -->
+      <div style="position:absolute; right:2rem; top:30%; z-index:5; text-align:right;">
+        <div style="font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:#1a4a2a;">fin zone</div>
+        <div style="font-size:0.55rem; color:#0f2a1a; margin-top:0.2rem;">dolphin · shark · whale</div>
+      </div>
+      <div style="position:absolute; right:2rem; top:64%; z-index:5; text-align:right;">
+        <div style="font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:#2a2010;">crustacean zone</div>
+        <div style="font-size:0.55rem; color:#1a1508; margin-top:0.2rem;">shrimp · crab · lobster</div>
+      </div>
+
+      <!-- FinPal arrow crossing the line -->
+      <div style="position:absolute; left:50%; top:38%; transform:translateX(-50%); z-index:6; text-align:center; pointer-events:none;">
+        <div style="font-size:0.55rem; letter-spacing:2px; text-transform:uppercase; color:#00ff8866; margin-bottom:0.3rem;">FinPal</div>
+        <div style="color:#00ff8844; font-size:1.2rem; line-height:1;">↑</div>
+      </div>
+
+      <!-- Shrimp — shallow, small, dim -->
+      <div class="creature" style="left:6%; top:60%; opacity:0.4; font-size:1.6rem;">
         🦐
-        <div class="creature-label" style="color:#333;">shrimp</div>
+        <div class="creature-label" style="color:#2a2010; font-size:0.55rem;">shrimp</div>
       </div>
 
-      <!-- Crab — bottom left, on the seafloor -->
-      <div class="creature" style="left:22%; top:74%; opacity:0.5; font-size:2.2rem;">
+      <!-- Crab — seafloor left -->
+      <div class="creature" style="left:20%; top:72%; opacity:0.55; font-size:2rem;">
         🦀
-        <div class="creature-label" style="color:#555;">crab<br/><span style="font-size:0.55rem; color:#333; font-style:italic;">most people</span></div>
+        <div class="creature-label" style="color:#3a2a10; font-size:0.6rem;">crab</div>
       </div>
 
-      <!-- Dolphin — near surface centre, glowing -->
-      <div class="creature dolphin-glow" style="left:44%; top:14%; font-size:3.2rem;">
+      <!-- Lobster — seafloor mid, slightly more presence -->
+      <div class="creature" style="left:36%; top:68%; opacity:0.5; font-size:2rem;">
+        🦞
+        <div class="creature-label" style="color:#3a2010; font-size:0.6rem;">lobster</div>
+      </div>
+
+      <!-- Dolphin — fin zone, upper left, glowing -->
+      <div class="creature dolphin-glow" style="left:18%; top:16%; font-size:3rem;">
         🐬
-        <div class="creature-label" style="color:#00ff88;">dolphin
-          <div style="font-size:0.55rem; color:#00ff88; margin-top:0.2rem; font-weight:700; letter-spacing:1px;">YOU, WITH FINPAL</div>
-        </div>
+        <div class="creature-label" style="color:#00cc70; font-size:0.6rem;">dolphin</div>
       </div>
 
-      <!-- Shark — mid depth right -->
-      <div class="creature" style="left:66%; top:42%; opacity:0.75; font-size:2.8rem;">
+      <!-- Shark — fin zone, mid -->
+      <div class="creature" style="left:55%; top:28%; opacity:0.8; font-size:3rem;">
         🦈
-        <div class="creature-label" style="color:#888;">shark</div>
+        <div class="creature-label" style="color:#668877; font-size:0.6rem;">shark</div>
       </div>
 
-      <!-- Whale — deep, barely visible -->
-      <div class="creature" style="left:78%; top:72%; opacity:0.18; font-size:4rem; filter:grayscale(1);">
+      <!-- Whale — deep abyss, barely a silhouette -->
+      <div class="creature" style="left:72%; top:70%; opacity:0.14; font-size:4.5rem; filter:grayscale(1) blur(0.5px);">
         🐋
-        <div class="creature-label" style="color:#222; font-size:0.6rem; letter-spacing:1px;">whale<br/><span style="font-size:0.5rem; color:#1a1a1a; font-style:italic;">unreachable</span></div>
+        <div class="creature-label" style="color:#111; font-size:0.55rem; letter-spacing:1px;">whale</div>
       </div>
 
       <!-- Depth markers -->
-      <div style="position:absolute; right:1.5rem; top:18%; font-size:0.6rem; color:#1a3a2a; letter-spacing:1px;">— surface</div>
-      <div style="position:absolute; right:1.5rem; top:45%; font-size:0.6rem; color:#152515; letter-spacing:1px;">— mid</div>
-      <div style="position:absolute; right:1.5rem; top:72%; font-size:0.6rem; color:#0f1a0f; letter-spacing:1px;">— deep</div>
+      <div style="position:absolute; left:1.5rem; top:18%; font-size:0.55rem; color:#1a3a2a; letter-spacing:1px; z-index:5;">— surface</div>
+      <div style="position:absolute; left:1.5rem; top:50%; font-size:0.55rem; color:#162010; letter-spacing:1px; z-index:5;">— thermocline</div>
+      <div style="position:absolute; left:1.5rem; top:75%; font-size:0.55rem; color:#0f1508; letter-spacing:1px; z-index:5;">— floor</div>
     </div>
   </div>
 
